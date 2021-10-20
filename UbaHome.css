@@ -1,0 +1,436 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: antiquewhite;
+}
+
+header {
+    height: 100vh;
+}
+
+/* .header-img {
+    background-image: url(../IMAGES/image2.jpg);
+    margin-top: 7px;
+    height: 70vh;
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-bottom: 2px solid rgb(236, 162, 154);
+} */
+
+
+.logo {
+    background-color: rgb(236, 230, 240);
+    display: inline-flexbox;
+    padding-bottom: 5px;
+    padding-top: 5px;
+}
+
+.ubalogo {
+    float: right;
+    height: 150px;
+    margin-right: 40px;
+}
+
+.juitlogo {
+    height: 150px;
+}
+
+.ubatext {
+    display: inline-flex;
+    font-size: 2.5em;
+    padding-left: 6em;
+
+}
+
+.menu-bar {
+    background-color: rgb(8, 22, 22);
+    height: 2.7rem;
+    /* z-index: 1; */
+}
+
+.menu-bar .far,
+.fas {
+    margin-right: 7px;
+}
+
+.fa-angle-right {
+    margin-left: 5px;
+    margin-right: 0px;
+}
+
+.menu-bar ul {
+    display: inline-flex;
+    padding-bottom: 0px;
+}
+
+.menu-bar ul li {
+    list-style-type: none;
+    text-align: left;
+    padding: 10PX 10px 20PX 10px;
+}
+
+.menu-bar ul li :hover {
+    color: black;
+    background-color: rgb(255, 168, 7);
+}
+
+/* *************************************************** */
+/* .menu-bar ul li div :hover {
+    color: rgb(0, 0, 0);
+    background-color: rgb(233, 207, 123);
+} */
+
+/* .menu-bar ul li div li :hover {
+    color: rgb(0, 0, 0);
+    background-color: rgb(235, 202, 59);
+} */
+/* ********************************************************* */
+.menu-bar ul li a {
+    text-decoration: none;
+    color: white;
+    padding: 10px 15px 10px 15px;
+}
+
+.sub-menu-1 {
+    display: none;
+}
+
+.menu-bar ul li:hover .sub-menu-1 {
+    display: block;
+    position: absolute;
+    background-color: rgb(8, 22, 22);
+    color: black;
+    font-size: large;
+    margin-top: .5rem;
+}
+
+.menu-bar ul li:hover .sub-menu-1 ul {
+    display: block;
+    z-index: 1;
+}
+
+.menu-bar ul li:hover .sub-menu-1 ul li {
+    border-bottom: 2px dotted rgb(245, 3, 3);
+    padding-bottom: 2px;
+    padding-top: 2px;
+}
+
+.menu-bar ul li:hover .sub-menu-1 ul li a:hover {
+    padding-bottom: 2px;
+    padding-top: 2px;
+}
+
+.menu-bar ul li:hover .sub-menu-1 ul .bottom_border {
+    border-bottom: none;
+    margin-bottom: 5px;
+}
+
+.sub-menu-2 {
+    display: none;
+}
+
+.faculty-name {
+    width: 200px;
+}
+
+.sub-menu-1 ul li:hover .sub-menu-2 {
+    display: block;
+    position: absolute;
+    background-color: rgb(8, 22, 22);
+    color: black;
+    font-size: large;
+    float: left;
+    margin-top: -28px;
+    margin-left: 12.3rem;
+}
+
+.sub-menu-1 ul li:hover .sub-menu-2 ul {
+    display: block;
+    z-index: 1;
+}
+
+.sub-menu-1 ul li:hover .sub-menu-2 ul li {
+    border-bottom: 2px dotted rgb(245, 3, 3);
+    padding-bottom: 2px;
+    padding-top: 2px;
+}
+
+.sub-menu-1 ul li:hover .sub-menu-2 ul li a:hover {
+    padding-bottom: 2px;
+    padding-top: 2px;
+}
+
+.sub-menu-1 ul li:hover .sub-menu-2 ul .bottom_border {
+    border-bottom: none;
+    margin-bottom: 5px;
+}
+
+.imgslider {
+    z-index: -1;
+    width: 98.8vw;
+    height: 71vh;
+    position: absolute;
+    margin-top: 72px;
+    left: 50%;
+    top: 55%;
+    transform: translate(-50%, -52%);
+    background-image: url(./juit.jpg);
+    animation: slider 15s infinite steps(1, end);
+}
+
+
+@keyframes slider {
+    0% {
+        background: url(./juit.jpg);
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+
+    25% {
+        background: url(./juit1.jpg);
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+
+    50% {
+        background: url(./juit2.jpg);
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+
+    75% {
+        background: url(./wall.jpg);
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+}
+
+#about {
+    background-color: #e6e9e7;
+}
+
+.every-page {
+    padding-left: 3rem;
+    padding-right: 3rem;
+    padding-top: 20px;
+    height: 97vh;
+}
+
+.h1-every-menu {
+    color: #f77605;
+    border-bottom: 3px solid #f77605;
+    width: 3rem;
+}
+
+.h1-every-menu:hover {
+    border-bottom: 3px solid rgb(255, 168, 7);
+    width: max-content;
+    transition-duration: 1s;
+}
+
+.h2-class {
+    margin-top: 1rem;
+    color: #f77605;
+    border-bottom: 3px solid #f77605;
+    width: fit-content;
+}
+
+.h2-class:hover {
+    border-bottom: 3px solid #f77605;
+    width: 100%;
+    transition-duration: 5s;
+}
+
+/* ====================== About ======================= */
+#about>.col-1 {
+    background-color: rgb(207, 204, 204);
+    width: 50%;
+    height: 80vh;
+    padding: 20px;
+    /* overflow-y: scroll; */
+    border-radius: 20px;
+    font-size: 20px;
+    margin-top: 10px;
+    float: left;
+    clear: left;
+}
+
+#about>.col-1:hover {
+    transform: translateY(-5px);
+    transform: translateX(-5px);
+    transition: 0.3s;
+    background-color: rgb(223, 219, 199);
+    box-shadow: 10px 10px 10px #f8e1cc;
+}
+
+#about>.col-2 {
+    height: 80vh;
+    width: 50%;
+    float: left;
+    padding-left: 20px;
+}
+
+#about .row-1 {
+    background-color: rgb(207, 204, 204);
+    width: 45vw;
+    flex-basis: 25%;
+    height: 38vh;
+    padding: 20px;
+    /* overflow-y: scroll; */
+    border-radius: 20px;
+    font-size: 20px;
+    margin-top: 10px;
+}
+
+#about .row-2 {
+    background-color: rgb(207, 204, 204);
+    width: 45vw;
+    flex-basis: 25%;
+    height: 38vh;
+    padding: 20px;
+    overflow-y: scroll;
+    border-radius: 20px;
+    font-size: 20px;
+    margin-top: 20px;
+}
+
+#about .row-1:hover {
+    transform: translateY(5px);
+    transform: translateX(5px);
+    transition: 0.3s;
+    background-color: rgb(223, 219, 199);
+    box-shadow: 10px 10px 10px #f8e1cc;
+}
+
+#about .row-2:hover {
+    transform: translateY(5px);
+    transform: translateX(5px);
+    transition: 0.3s;
+    background-color: rgb(223, 219, 199);
+    box-shadow: 10px 10px 10px #f8e1cc;
+}
+
+.li-color-change:hover {
+    color: #f77605;
+}
+
+/* ================== About ends ========== */
+/* ========================= Footer ============================================ */
+.footer {
+    flex-wrap: wrap;
+    background-color: #f77605de;
+    height: auto;
+    width: 100%;
+}
+
+.row {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    border-bottom: 2px solid black;
+}
+
+.row>div {
+    height: auto;
+    width: 30%;
+    margin: 20px;
+    padding: 10px;
+    text-align: center;
+}
+
+.row>div>h2 {
+    margin-bottom: 15px;
+    border-bottom: 2px solid black;
+}
+
+.row>.fcol-1>p {
+    text-align: center;
+    /* margin-left: 50px; */
+    font-size: larger;
+    color: rgba(255, 255, 255, 0.815);
+    text-align: center;
+}
+
+.row>.fcol-2 {
+    text-align: center;
+}
+
+.row>.fcol-3 {
+    text-align: center;
+}
+
+.fcol-2>p>a {
+    text-decoration: none;
+    color: rgba(255, 255, 255, 0.815);
+    font-weight: 700;
+}
+
+.fcol-2>p>a:hover {
+    color: rgba(102, 83, 83, 0.836);
+}
+
+.fcol-3>p>a {
+    text-decoration: none;
+    color: rgba(255, 255, 255, 0.815);
+    font-weight: 700;
+    padding: 1px;
+}
+
+.fcol-3>p>a:hover {
+    color: rgba(102, 83, 83, 0.836);
+    /* border-bottom: 3px solid rgb(102, 83, 83);
+    transition-duration: .5s;
+    width: fit-content;*/
+}
+
+.fcol-3>p {
+    color: rgb(107, 101, 101);
+}
+
+.fcol-3>p>strong {
+    color: black;
+}
+
+.last>p {
+    text-align: center;
+}
+
+/* ============================ Contact ============= */
+.div-contact {
+    width: 35vw;
+    height: 40vh;
+    /* background-color: rgb(244, 246, 248); */
+    margin: 2rem;
+    border: 2px solid black;
+
+}
+
+.div-contact:hover {
+    box-shadow: 5px 15px 20px rgb(204, 234, 240);
+}
+
+
+
+.con {
+    display: inline-flex;
+
+}
+
+.div2-contact {
+    padding: 1rem;
+    font-size: large;
+    /* border: 2px solid black; */
+}
+
+.contact-h2 {
+    background-color: aqua;
+    padding: 1.3rem;
+    text-align: center;
+}
+
+.gal-img:hover {
+    width: 530px;
+}
